@@ -45,6 +45,8 @@ const nextConfig: NextConfig = {
         permanent: false,
       },
       { source: "/mailing-list-signup", destination: "/", permanent: false },
+      // The retired LearnPress course catalogue.
+      { source: "/course/:slug", destination: "/outreach", permanent: false },
       { source: "/programs", destination: "/philanthropy", permanent: false },
       {
         source: "/programs/:slug",
