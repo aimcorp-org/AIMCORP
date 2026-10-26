@@ -4,7 +4,7 @@ export const site = {
   tagline: "Technology for social action",
   description:
     "AIMCorp is a nonprofit building public-interest initiatives and collaborating with mission-driven organizations through technology, engineering, research, and innovation.",
-  url: "https://aimcorp.org",
+  url: "https://www.aimcorp.org",
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "info@aimcorp.org",
   paypal: "https://www.paypal.me/aimcorp",
   venmoPath: "/donate",
