@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import {
-  Art,
-  ButtonLink,
-  Container,
-  ContentPlaceholder,
-  Eyebrow,
-} from "@/components/site/primitives";
+import { ContactSection } from "@/components/site/ContactSection";
+import { Art, Container, Eyebrow } from "@/components/site/primitives";
 import { services } from "@/lib/content/services";
 
 export const metadata: Metadata = {
@@ -142,24 +137,10 @@ export default function ServicesPage() {
         </section>
       </Container>
 
-      {/* Future contact destination -------------------------------------- */}
-      <Container className="reveal">
-        <section className="flex flex-col items-start gap-5 rounded-[1.75rem] bg-panel p-7 sm:rounded-[2rem] sm:p-12">
-          <h2 className="max-w-[20ch] text-[clamp(1.6rem,3vw,2.25rem)] leading-[1.12] font-bold tracking-[-0.03em] text-balance text-fg">
-            Start a conversation
-          </h2>
-          {services.contactDestination ? (
-            <ButtonLink href={services.contactDestination.href}>
-              {services.contactDestination.label}
-            </ButtonLink>
-          ) : (
-            <div className="max-w-[52ch]">
-              <ContentPlaceholder>
-                A contact destination for collaboration enquiries has not been
-                confirmed yet. Once one is approved it will appear here.
-              </ContentPlaceholder>
-            </div>
-          )}
+      {/* Contact ---------------------------------------------------------- */}
+      <Container className="reveal" id="contact">
+        <section className="scroll-mt-8 rounded-[1.75rem] bg-panel p-7 sm:rounded-[2rem] sm:p-12">
+          <ContactSection />
         </section>
       </Container>
     </>

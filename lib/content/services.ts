@@ -99,11 +99,19 @@ export const services = {
   ],
 
   /**
-   * FUTURE CONTACT DESTINATION
-   * Set this to an approved address or form URL once one exists, e.g.
-   *   contactDestination: { label: "hello@example.org", href: "mailto:hello@example.org" }
-   * While it is null the page shows an honest placeholder instead of an
-   * invented email address or a form that goes nowhere.
+   * CONTACT
+   * The address is stored in two halves and only joined in the browser, so
+   * the published HTML never contains a scrapable mailto: link.
+   *
+   * The form composes a message and hands it to the visitor's mail client —
+   * it does not post anywhere, so there is no backend to run or secure. To
+   * collect submissions directly instead, paste a Google Form "embed" URL
+   * (Send -> <> -> the src of the iframe) into googleFormEmbedUrl and the
+   * form below is replaced by it.
    */
-  contactDestination: null as { label: string; href: string } | null,
+  contact: {
+    emailUser: "contact.aimcorp",
+    emailDomain: "aimcorp.org",
+    googleFormEmbedUrl: null as string | null,
+  },
 };

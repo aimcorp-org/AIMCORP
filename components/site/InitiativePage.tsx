@@ -343,8 +343,6 @@ export function InitiativePage({ initiative }: { initiative: Initiative }) {
 
           <GallerySection initiative={initiative} />
 
-          <EmbedSection initiative={initiative} />
-
           {initiative.hiddenSections.includes("building") ? null : (
             <Section
               heading="What we’re building"
@@ -362,6 +360,8 @@ export function InitiativePage({ initiative }: { initiative: Initiative }) {
               placeholder={initiativePlaceholders.audience}
             />
           )}
+
+          <EmbedSection initiative={initiative} />
 
           {/* Optional — hidden entirely when no real links are supplied. */}
           {hasResources ? (

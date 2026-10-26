@@ -150,21 +150,20 @@ export const initiatives: Initiative[] = [
     },
     image: null, // OPTIONAL: a still or key frame could go here
     challenge: [
-      "Gen Z gets much of its health information from the same platforms that spread misinformation. Fighting that is not only a matter of producing content with correct information, but of producing it in a format people choose to watch.",
+      "Health information travels on the same platforms as health misinformation, and the misinformation is usually the better made of the two. Correcting the record is not enough on its own \u2014 the correction has to arrive in a format people actually choose to watch.",
+      "Loka exists to equip young people with information they can rely on: grounded in the literature, sourced from the people who do the work, and produced well enough to hold attention against everything else competing for it.",
     ],
     building: null,
     hiddenSections: ["building"], // the trailer takes this slot instead
     video: {
-      // Set this to the YouTube id once the trailer is published.
-      youtubeId: null,
-      title: "Loka \u2014 vaccination season trailer",
-      pendingNote: "The vaccination season trailer will play here once it\u2019s published.",
+      youtubeId: "3mXnPpd7WMk",
+      title: "Loka Documentary Season 1: Trailer",
+      pendingNote: "The season trailer will play here once it\u2019s published.",
     },
     channels: [
-      // Add each real account URL here; the chips stay unlinked until then.
-      { platform: "YouTube", href: null },
-      { platform: "Instagram", href: null },
-      { platform: "TikTok", href: null },
+      { platform: "YouTube", href: "https://www.youtube.com/@aimcorploka" },
+      { platform: "Instagram", href: "https://www.instagram.com/loka.aimcorp/" },
+      { platform: "TikTok", href: "https://www.tiktok.com/@aimcorploka" },
     ],
     features: [],
     embed: null,
@@ -198,8 +197,9 @@ export const initiatives: Initiative[] = [
     },
     image: null,
     challenge: [
-      "Most research software solves one part of the workflow \u2014 surveys here, datasets there, transcription somewhere else. Research teams assemble the rest by hand, and the connective tissue is people. It is hardest in exactly the settings the research serves: intermittent connectivity, multiple languages, sensitive health information, distributed field teams and long follow-up.",
-      "That overhead falls heaviest on community-based women\u2019s health research, which carries large questions on thin resources. Oona exists to take that weight off the people doing the work \u2014 to accelerate community-based research and to foreground women\u2019s and community health as a research domain in its own right, with the intersectional and global perspectives it requires.",
+      "Mixed-methods community research is essential to understanding how health and medicine actually play out at the grassroots \u2014 especially in underserved areas like women\u2019s health. It can involve vast surveys, datasets, transcriptions and experiments.",
+      "Research teams must often juggle all of that with very little infrastructure behind them. It is hardest in exactly the settings the research serves: intermittent connectivity, multiple languages, sensitive health information, distributed field teams and long follow-up.",
+      "Oona exists to take that weight off the people doing the work \u2014 to accelerate community-based research and to foreground women\u2019s and community health research. It is tailored to grassroots needs, and provides a suite of tools that can interface with the data reporting systems and records already in place.",
     ],
     hiddenSections: [],
     video: null,
@@ -391,10 +391,8 @@ export const initiatives: Initiative[] = [
       alt: "Abstract connected node lattice representing the STEM Lab initiative",
     },
     image: null,
-    challenge: [
-      "Teachers are asked to make abstract science concrete with whatever is already in the room. The ideas students struggle with most are often the ones that cannot be seen directly \u2014 and those are the ones that end up flattened into a diagram on a worksheet.",
-    ],
-    hiddenSections: [],
+    challenge: null,
+    hiddenSections: ["challenge"], // the page opens on what we're building
     video: null,
     channels: [],
     building: [
@@ -463,8 +461,9 @@ export const initiatives: Initiative[] = [
     },
     image: null,
     challenge: [
-      "Emergency departments already ask about social needs. Housing, hygiene, food and transportation insecurity get screened, recorded, and then handed to a volunteer donation closet that the clinical system cannot see: no order, no tracking, no record that anything was delivered.",
-      "So the need is known and the help exists, but the two are joined by hand \u2014 and nothing about it reaches the chart.",
+      "People are readmitted because of what happens after they leave. Whether a discharge holds comes down to housing, food, transport and the practical means to manage a condition at home \u2014 and for the most vulnerable patients, those are exactly the things most likely to be missing.",
+      "Hospitals already screen for this. Housing, hygiene, food and transportation insecurity get asked about, recorded, and then handed to a volunteer donation closet the clinical system cannot see: no order, no tracking, no record that anything was delivered.",
+      "So the need is known and the help exists, but the two are joined by hand, and nothing about it reaches the chart. Closing that gap is how a hospital can support someone\u2019s health beyond the point they walk out.",
     ],
     hiddenSections: [],
     video: null,
